@@ -23,11 +23,11 @@ The Basic Application is Ready. It can perform multiple additions,subtractions,d
 
 ## What can you Contribute to?
 
-- Fix Bugs: For Example the button '3' is not clickable. On pressing 9, the application takes the input as six. This needs to be fixed.
+- Fix Bugs: For Example the button '3' is not clickable. On pressing 9, the application takes the input as six. These bugs needs to be fixed.
 
-- App Crahes: Right Now, The App crashes a lot of times. For Example if you try calculating 2* and without giving the second paprameter try calculating it, the App crashes. We need to handle such app crashes by giving warnings and alerts. This is an interesting part to work on. Try debugging the code with loads of print statements. 
+- App Crahes: Right Now, The App crashes a lot of times. For Example if you input 2* and without giving the second paprameter try calculating it, the App crashes. We need to handle such app crashes by giving warnings and alerts. This is an interesting part to work on. Try debugging the code with loads of print statements. 
 
-- Scientific Calculations: The App only performs basic calculations as of now. We need to add the advanced features. You need to create a new Activity [Tutorial](https://learntodroid.com/how-to-switch-between-activities-in-android/) , such that users can  navigate to the activity using a button or a dropdown icon(preferable). Use the inbuilt Java Math Functions like sin,pow. Design an Algorithm for PEDMAS rule. Here's a [tutorial](https://www.youtube.com/watch?v=taEpczciQXk&feature=youtu.be) which can help you.
+- Scientific Calculations: The App only performs basic calculations as of now. We need to add the advanced features. You need to create a new [Activity](https://learntodroid.com/how-to-switch-between-activities-in-android/) , such that users can  navigate to the activity using a button or a dropdown icon(preferable). Use the inbuilt Java Math Functions like sin,pow. Design an Algorithm for PEDMAS rule. Here's a [tutorial](https://www.youtube.com/watch?v=taEpczciQXk&feature=youtu.be) which can help you.
 
 - Quadratic Equation Solver: (Real + Imaginary Roots) What if you input p and q from the equation : x<sup>2</sup>+px+q and get the two roots(real as well as imaginary) as the output. This is again an interesting part to contribute to. Designing the Algorithm here is the real fun. Again, you will have to create a new Activity, such that users can navigate to this activity using a button or a dropdown icon(preferable).
 
