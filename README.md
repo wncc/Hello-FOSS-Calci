@@ -33,7 +33,9 @@ The Basic Application is Ready. It can perform multiple additions,subtractions,d
 
 - Working on the UI: The User Interface of the Application looks dullish at the moment. Adding Various Color themes to the application would be encouraged. You can give users variety of options to choose from. Exmaples: Dark Themes, Rainbow Theme. Here's a video which can help: [Dark theme](https://www.youtube.com/watch?v=QhGf8fGJM8U). Put on your creative caps here and come out with great app themes. Try exploring the different options in xml codes.
 
-- If you have want to work on any additional feature, you are welcome. You can send a Pull Request along with a commit to update the ReadMe.md file.
+- App Icon: The present App Icon which is a default icon provided by Android Studio has to be replaced by a new one. You can simply download from internet or create a new one, edit the manifest files. Here's how to do it. [App Icon](https://stackoverflow.com/questions/26615889/how-do-you-change-the-launcher-logo-of-an-app-in-android-studio)
+
+- If you have want to work on any additional feature, you are welcome to do that. You can send a Pull Request along with a commit to update the ReadMe.md file.
 
 Join our [Discord](https://discord.com/invite/mzhyrvS) for discussing your doubts.
 
