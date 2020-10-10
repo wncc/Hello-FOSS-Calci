@@ -1,4 +1,4 @@
-# HELLO-FOSS-Scientific Calculator
+# HELLO-FOSS Scientific Calculator
 
 Hello There!
 This project is a part of HELLO-FOSS: Celebration of Open Source by the Web and Coding Club. We will be building a Scientific Calculator, similar to the one installed on our cellphones. The Repo has been given the label of "Hacktoberfest". Refer to [Hello-FOSS](https://github.com/wncc/Hello-FOSS) for guidelines.
@@ -7,20 +7,21 @@ This project is a part of HELLO-FOSS: Celebration of Open Source by the Web and 
 
 <img src="calculator_image.gif" width="400" height="600">
 
-### Guidelines
+## Guidelines
+
 Absolutely No Prerequisites for contributing to this Project.
 We will be using Android Studio for our Project. If you are a beginner, you are advised to follow this article on [Android Studio](https://www.wncc-iitb.org/wiki/index.php/Android_Studio) for basic set up and building your first App. We will be following the same code as given in the article. 
 Note:  Do update the "Updates on the Project" of this ReadMe.md file after every contribution you make.
 
-### Problem Statement
+## Problem Statement
 
 The main intention of this project is to build a fully-functional Scientific Calculator Application. The App should support basic calculations, PEDMAS rules and perform scientific calculations, trigonometric functions. We can add a "Quadratic equation" solver functionality to our Application as well.
 
-### Updates on The Project
+## Updates on The Project
 
 The Basic Application is Ready. It can perform multiple additions,subtractions,divisions and multiplications of integers as well as decimals.
 
-### What can you Contribute to?
+## What can you Contribute to?
 
 - Fix Bugs: For Example the button '3' is not clickable. On pressing 9, the application takes the input as six. This needs to be fixed.
 
