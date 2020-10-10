@@ -11,7 +11,7 @@ This project is a part of HELLO-FOSS: Celebration of Open Source by the Web and 
 
 Absolutely No Prerequisites for contributing to this Project.
 We will be using Android Studio for our Project. If you are a beginner, you are advised to follow this article on [Android Studio](https://www.wncc-iitb.org/wiki/index.php/Android_Studio) for basic set up and building your first App. We will be following the same code as given in the article. 
-Note:  Do update the "Updates on the Project" of this ReadMe.md file after every contribution you make.
+Note:  Do update the "Updates on the Project" of this README.md file after every contribution you make.
 
 ## Problem Statement
 
@@ -35,7 +35,7 @@ The Basic Application is Ready. It can perform multiple additions,subtractions,d
 
 - App Icon: The present App Icon which is a default icon provided by Android Studio has to be replaced by a new one. You can simply download from internet or create a new one, edit the manifest files. Here's how to do it: [App Icon](https://stackoverflow.com/questions/26615889/how-do-you-change-the-launcher-logo-of-an-app-in-android-studio)
 
-- If you have want to work on any additional feature, you are welcome to do that. You can send a Pull Request along with a commit to update the ReadMe.md file.
+- If you have want to work on any additional feature, you are welcome to do that. You can send a Pull Request along with a commit to update the README.md file.
 
 Join our [Discord](https://discord.com/invite/mzhyrvS) for discussing your doubts.
 
