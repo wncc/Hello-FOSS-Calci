@@ -21,6 +21,10 @@ The main intention of this project is to build a fully-functional Scientific Cal
 
 The Basic Application is Ready. It can perform multiple additions,subtractions,divisions and multiplications of integers as well as decimals.
 
+Fixed basic bugs. '3' is clickable and the application takes correct values on pressing the relevant buttons. 
+
+Fixed app crashes - App doesn't crash when you enter 2* and then press / or =.
+
 ## What can you Contribute to?
 
 - Fix Bugs: For Example the button '3' is not clickable. On pressing 9, the application takes the input as six. These bugs needs to be fixed.
