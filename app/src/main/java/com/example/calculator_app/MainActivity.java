@@ -58,7 +58,13 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
-            //Three isn't clickable!
+            three.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    info.setText(info.getText().toString() + "3");
+                }
+            });
+
 
             four.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -91,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
             eight.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    info.setText(info.getText().toString() + "4");
+                    info.setText(info.getText().toString() + "8");
                 }
             });
 
@@ -171,17 +177,16 @@ public class MainActivity extends AppCompatActivity {
         }
 
         private void setupUIViews() {
-
-            one = (Button) findViewById(R.id.btn1);
             zero = (Button) findViewById(R.id.btn0);
+            one = (Button) findViewById(R.id.btn1);
             two = (Button) findViewById(R.id.btn2);
             three = (Button) findViewById(R.id.btn3);
-            four = (Button) findViewById(R.id.btn6);
+            four = (Button) findViewById(R.id.btn4);
             five = (Button) findViewById(R.id.btn5);
-            six = (Button) findViewById(R.id.btn9);
+            six = (Button) findViewById(R.id.btn6);
             seven = (Button) findViewById(R.id.btn7);
             eight = (Button) findViewById(R.id.btn8);
-            nine = (Button) findViewById(R.id.btn0);
+            nine = (Button) findViewById(R.id.btn9);
             add = (Button) findViewById(R.id.btnadd);
             sub = (Button) findViewById(R.id.btnsub);
             mul = (Button) findViewById(R.id.btnmul);
