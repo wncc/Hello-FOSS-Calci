@@ -20,6 +20,7 @@ The main intention of this project is to build a fully-functional Scientific Cal
 ## Updates on The Project
 
 The Basic Application is Ready. It can perform multiple additions,subtractions,divisions and multiplications of integers as well as decimals.
+Fixed Bugs, Buttons are working properly
 
 ## What can you Contribute to?
 
