@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
     private final char DIVISION = '/';
     private final char EQU = 0;
     private double val1 = Double.NaN;
-    private double val2;
-    private char ACTION;
+    private double val2= Double.NaN;
+    private char ACTION='n';
 
 
 
@@ -123,7 +124,8 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     compute();
                     ACTION = ADDITION;
-                    result.setText(String.valueOf(val1) + "+");
+                    if (!Double.isNaN(val1))
+                        result.setText(String.valueOf(val1) + "+");
                     info.setText(null);
                 }
             });
@@ -133,7 +135,8 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     compute();
                     ACTION = MULTIPLICATION;
-                    result.setText(String.valueOf(val1) + "*");
+                    if (!Double.isNaN(val1))
+                        result.setText(String.valueOf(val1) + "*");
                     info.setText(null);
                 }
             });
@@ -143,7 +146,8 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     compute();
                     ACTION = DIVISION;
-                    result.setText(String.valueOf(val1) + "/");
+                    if (!Double.isNaN(val1))
+                        result.setText(String.valueOf(val1) + "/");
                     info.setText(null);
                 }
             });
@@ -151,11 +155,17 @@ public class MainActivity extends AppCompatActivity {
             equal.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    compute();
-                    ACTION = EQU;
-                    result.setText(result.getText().toString() + String.valueOf(val2) + "=" + String.valueOf(val1));
-                    // 5 + 4 = 9
-                    info.setText(null);
+                    if (ACTION != EQU && ACTION != 'n'){
+                        if (!Double.isNaN(val1)) {
+                            compute();
+                            if (!info.getText().toString().isEmpty()) {
+                                ACTION = EQU;
+                                result.setText(result.getText().toString() + String.valueOf(val2) + "=" + String.valueOf(val1));
+                                // 5 + 4 = 9
+                                info.setText(null);
+                            }
+                        }
+                    }
                 }
             });
 
@@ -166,6 +176,7 @@ public class MainActivity extends AppCompatActivity {
                         CharSequence name = info.getText().toString();
                         info.setText(name.subSequence(0, name.length() - 1));
                     } else {
+                        ACTION='n';
                         val1 = Double.NaN;
                         val2 = Double.NaN;
                         info.setText(null);
@@ -198,29 +209,40 @@ public class MainActivity extends AppCompatActivity {
         }
 
         private void compute() {
-            if (!Double.isNaN(val1)) {
-                val2 = Double.parseDouble(info.getText().toString());
+            if (info.getText().toString().isEmpty() && ACTION!=EQU) {
+                Toast.makeText(MainActivity.this, "Please Enter All Parameters", Toast.LENGTH_SHORT).show();
+            }
+            else if (info.getText().toString().isEmpty() && ACTION==EQU){
+                result.setText(String.valueOf(val1));
+            }
+            else {
+                if (!Double.isNaN(val1)) {
 
-                switch (ACTION) {
-                    case ADDITION:
-                        val1 = val1 + val2;
-                        break;
-                    case SUBTRACTION:
-                        val1 = val1 - val2;
-                        break;
-                    case MULTIPLICATION:
-                        val1 = val1 * val2;
-                        break;
-                    case DIVISION:
-                        val1 = val1 / val2;
-                        break;
-                    case EQU:
-                        break;
+                    val2 = Double.parseDouble(info.getText().toString());
+
+                    switch (ACTION) {
+                        case ADDITION:
+                            val1 = val1 + val2;
+                            break;
+                        case SUBTRACTION:
+                            val1 = val1 - val2;
+                            break;
+                        case MULTIPLICATION:
+                            val1 = val1 * val2;
+                            break;
+                        case DIVISION:
+                            val1 = val1 / val2;
+                            break;
+                        case EQU:
+                            break;
+                    }
+
+                } else {
+                    val1 = Double.parseDouble(info.getText().toString());
                 }
-            } else {
-                val1 = Double.parseDouble(info.getText().toString());
             }
         }
+
 
 
         //The following code can be used to switch to another activity
